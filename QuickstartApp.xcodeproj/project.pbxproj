@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32AC4F393085374CF819C02D /* Pods_QuickstartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AF1A1C67A059FED99D5FB9 /* Pods_QuickstartApp.framework */; };
 		C0A39BC61F8F252F00C09B08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A39BC51F8F252F00C09B08 /* AppDelegate.swift */; };
 		C0A39BC81F8F252F00C09B08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A39BC71F8F252F00C09B08 /* ViewController.swift */; };
 		C0A39BCB1F8F252F00C09B08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A39BC91F8F252F00C09B08 /* Main.storyboard */; };
 		C0A39BCD1F8F252F00C09B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A39BCC1F8F252F00C09B08 /* Assets.xcassets */; };
 		C0A39BD01F8F252F00C09B08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A39BCE1F8F252F00C09B08 /* LaunchScreen.storyboard */; };
 		C0A39BDB1F8F253000C09B08 /* QuickstartAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A39BDA1F8F253000C09B08 /* QuickstartAppTests.swift */; };
+		C0A39BE61F8F266500C09B08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0A39BE51F8F266500C09B08 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FD911BF146FF74D63EA639F /* Pods-QuickstartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickstartApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp.debug.xcconfig"; sourceTree = "<group>"; };
+		88AF1A1C67A059FED99D5FB9 /* Pods_QuickstartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickstartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9614E12F50548322109B51F9 /* Pods-QuickstartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickstartApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp.release.xcconfig"; sourceTree = "<group>"; };
 		C0A39BC21F8F252F00C09B08 /* QuickstartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickstartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A39BC51F8F252F00C09B08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A39BC71F8F252F00C09B08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		C0A39BD61F8F253000C09B08 /* QuickstartAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickstartAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A39BDA1F8F253000C09B08 /* QuickstartAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickstartAppTests.swift; sourceTree = "<group>"; };
 		C0A39BDC1F8F253000C09B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A39BE51F8F266500C09B08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AC4F393085374CF819C02D /* Pods_QuickstartApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16082F44DAEBA6D830DD86C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FD911BF146FF74D63EA639F /* Pods-QuickstartApp.debug.xcconfig */,
+				9614E12F50548322109B51F9 /* Pods-QuickstartApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		409FEA5CD0DAA3AF62B7102A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88AF1A1C67A059FED99D5FB9 /* Pods_QuickstartApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0A39BB91F8F252F00C09B08 = {
 			isa = PBXGroup;
 			children = (
+				C0A39BE51F8F266500C09B08 /* GoogleService-Info.plist */,
 				C0A39BC41F8F252F00C09B08 /* QuickstartApp */,
 				C0A39BD91F8F253000C09B08 /* QuickstartAppTests */,
 				C0A39BC31F8F252F00C09B08 /* Products */,
+				16082F44DAEBA6D830DD86C1 /* Pods */,
+				409FEA5CD0DAA3AF62B7102A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0A39BDF1F8F253000C09B08 /* Build configuration list for PBXNativeTarget "QuickstartApp" */;
 			buildPhases = (
+				32DA4751AC340A3EBB90F94D /* [CP] Check Pods Manifest.lock */,
 				C0A39BBE1F8F252F00C09B08 /* Sources */,
 				C0A39BBF1F8F252F00C09B08 /* Frameworks */,
 				C0A39BC01F8F252F00C09B08 /* Resources */,
+				D7B7E3CB0D3A25D447BA4907 /* [CP] Embed Pods Frameworks */,
+				358E136F60A11438F33001DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A39BD01F8F252F00C09B08 /* LaunchScreen.storyboard in Resources */,
+				C0A39BE61F8F266500C09B08 /* GoogleService-Info.plist in Resources */,
 				C0A39BCD1F8F252F00C09B08 /* Assets.xcassets in Resources */,
 				C0A39BCB1F8F252F00C09B08 /* Main.storyboard in Resources */,
 			);
@@ -193,6 +224,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32DA4751AC340A3EBB90F94D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickstartApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		358E136F60A11438F33001DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B7E3CB0D3A25D447BA4907 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0A39BBE1F8F252F00C09B08 /* Sources */ = {
@@ -351,12 +445,14 @@
 		};
 		C0A39BE01F8F253000C09B08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD911BF146FF74D63EA639F /* Pods-QuickstartApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YLNC86F76;
 				INFOPLIST_FILE = QuickstartApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuickstartApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuickstartAppY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,12 +461,14 @@
 		};
 		C0A39BE11F8F253000C09B08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9614E12F50548322109B51F9 /* Pods-QuickstartApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YLNC86F76;
 				INFOPLIST_FILE = QuickstartApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuickstartApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuickstartAppY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
