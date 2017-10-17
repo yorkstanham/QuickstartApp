@@ -169,8 +169,8 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
         for tag in tags {
             for subview in view.subviews {
                 if subview is UITextField && subview.tag == tag {
-                    let speed0label = subview as! UITextField
-                    listOfTextFields[tag] = speed0label.text!
+                    let speedlabel = subview as! UITextField
+                    listOfTextFields[tag] = speedlabel.text!
                 }
             }
             let spreadsheetId = "1L2p4KPnvze1-vJXeOIRAxT19haalvp106Px9VuiG5dI"
