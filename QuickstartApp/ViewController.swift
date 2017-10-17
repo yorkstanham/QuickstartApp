@@ -61,9 +61,9 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
     }
     
     
-    // Display (in the UITextView) the names and majors of students in a sample
+    // Display (in the UITextView) the data pulled from the sheet
     // spreadsheet:
-    // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+    // https://docs.google.com/spreadsheets/d/1L2p4KPnvze1-vJXeOIRAxT19haalvp106Px9VuiG5dI/edit
     func listMajors() {
         //displayLabel.text = "Getting sheet data..."
         write = "no"
@@ -90,7 +90,6 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
         let rows = result.values!
         
         if rows.isEmpty {
-            //displayLabel.text = "No data found."
             return
         }
         
@@ -164,6 +163,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
         present(alert, animated: true, completion: nil)
     }
     
+    // Write the selected data to the sheet
     func writeData() {
         let tags = [0,1,2,3,4,5,6,7,8,9,10,11,12]
         for tag in tags {
@@ -175,9 +175,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
             }
             let spreadsheetId = "1L2p4KPnvze1-vJXeOIRAxT19haalvp106Px9VuiG5dI"
             let range = "\("Test!g" + overallRowNumArray[tag] + ":g" + overallRowNumArray[tag])"
-            //print(range)
             let valueRange = GTLRSheets_ValueRange.init()
-            //print(listOfTextFields[0])
             valueRange.values = [[listOfTextFields[tag] as Any]]
             let query = GTLRSheetsQuery_SpreadsheetsValuesUpdate
                 .query(withObject: valueRange, spreadsheetId: spreadsheetId, range: range)
@@ -189,6 +187,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
         }
     }
     
+    // Calls the writedata() function and then calls the listMajors() function after a time delay
     @IBAction func Refresh(_ sender: Any) {
 
         writeData()
@@ -214,6 +213,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
         }
     }
     
+    // Moves screen up when keyboard pops up
     @objc func keyboardWillShow(notification: NSNotification) {
         let info:NSDictionary = notification.userInfo! as NSDictionary
         let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
@@ -229,6 +229,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
         
     }
     
+    //Moves screen down when keyboard is removed
     @objc func keyboardWillHide(notification: NSNotification) {
         let info: NSDictionary = notification.userInfo! as NSDictionary
         let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
@@ -244,7 +245,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
         
     }
     
-    
+    // Turns off notifications of keyboard being present or not
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
